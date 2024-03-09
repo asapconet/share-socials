@@ -51,7 +51,7 @@ const SsButton = ({
         {...rest}
         onClick={handleClick}
         className={classNames(
-          " bg-black max-w-[6.5rem] flex items-center justify-center px-2 rounded-lg py-2",
+          " max-w-[6.5rem] flex items-center justify-center px-2 rounded-lg py-2",
           className
         )}
       >
