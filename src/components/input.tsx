@@ -38,7 +38,7 @@ const SsInput = ({
             {label}
           </label>
         )}
-        <div className="relative w-full">
+        <div className="relative w-full py-2">
           <textarea
             id={rest.name || ""}
             className={classNames(

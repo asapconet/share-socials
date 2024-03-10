@@ -10,12 +10,12 @@ export const linkData: Link[] = [
     title: "twitter",
     link: "https://twitter.com/intent/tweet",
   },
-  { id: 22, title: "whatsApp", link: "https://wa.me/" },
   {
     id: 21,
     title: "linkedIn",
     link: "http://www.linkedin.com/shareArticle?mini=true",
   },
+  { id: 22, title: "whatsApp", link: "https://wa.me/" },
   {
     id: 26,
     title: "pinterest",

@@ -61,7 +61,7 @@ export default function Home() {
 
           <SsButton
             onClick={() => setIsOpen(true)}
-            className="w-full pb-3 bg-black"
+            className="w-full py-3 bg-black"
           >
             Take a tour
           </SsButton>
@@ -128,6 +128,8 @@ export default function Home() {
                       />
                     </div>
                   </div>
+                </div>
+                <div>
                   <SsInput
                     name="imageUrl"
                     label="Image url to share"
