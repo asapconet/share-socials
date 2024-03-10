@@ -27,7 +27,7 @@ export const LinkCard = ({ className, ...rest }: BProps) => {
     <div
       onClick={rest.onClick}
       className={classNames(
-        "flex flex-col justify-between gap-2 rounded-xl p-6 min-h-[16vh] w-full",
+        "flex flex-col justify-between gap-2 rounded-xl p-6 md:min-h-[16vh] w-full",
         className,
         rest.title === "twitter"
           ? "bg-gray-100"
