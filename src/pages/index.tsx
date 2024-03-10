@@ -51,8 +51,10 @@ export default function Home() {
       </span>
       <section className="items-center md:px-12 2xl:mx-[14rem] justify-between flex-col flex">
         <div className="flex justify-center gap-12 items-center flex-col">
-          <p className="text-[2rem] md:text-[2.8rem] max-w-[85%] md:max-w-[70%] lg:max-w-[60%]
-           text-center font-bold">
+          <p
+            className="text-[2rem] md:text-[2.8rem] max-w-[85%] md:max-w-[70%] lg:max-w-[60%]
+           text-center font-bold"
+          >
             Get Social shareable links for{" "}
             <span className="gradient-text capitalize"> {text}</span>
           </p>
@@ -69,8 +71,8 @@ export default function Home() {
                 Shareable Data
               </h4>
               <p className="text-sm text-gray-500">
-                Add data you'd like to share in this section. Note that fields
-                differ by social media
+                Add data you&apos;d like to share in this section. Note that
+                fields differ by social media
               </p>
               <div className="mt-4 flex flex-col gap-6">
                 <div>
