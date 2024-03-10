@@ -44,14 +44,15 @@ export default function Home() {
   return (
     <main
       className={`flex min-h-screen xl:mx-[4rem] 2xl:mx-[12rem] 
-      mb-12 flex-col gap-[10rem] ${inter.className}`}
+      mb-12 flex-col gap-[5rem] md:gap-[10rem] ${inter.className}`}
     >
       <span className="gradient-text font-bold text-lg flex justify-start pt-4 p-2">
         SocialShare
       </span>
       <section className="items-center md:px-12 2xl:mx-[14rem] justify-between flex-col flex">
         <div className="flex justify-center gap-12 items-center flex-col">
-          <p className="text-[2rem] md:text-[2.8rem] md:max-w-[70%] lg:max-w-[60%] text-center font-bold">
+          <p className="text-[2rem] md:text-[2.8rem] max-w-[85%] md:max-w-[70%] lg:max-w-[60%]
+           text-center font-bold">
             Get Social shareable links for{" "}
             <span className="gradient-text capitalize"> {text}</span>
           </p>
