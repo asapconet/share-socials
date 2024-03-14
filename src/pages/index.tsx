@@ -1,15 +1,22 @@
 import { useEffect, useState } from "react";
 import classNames from "classnames";
 import SsInput from "@/components/input";
-import { Inter } from "next/font/google";
+import { DM_Sans, Inter } from "next/font/google";
 import { linkData } from "@/data/LinkData";
 import SsButton from "@/components/button";
 import { LinkCard } from "@/components/LinkCard";
 import { FaLinkedin, FaPinterest, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { useTour } from "@reactour/tour";
+import { Metadata } from "next";
 
-const inter = Inter({ subsets: ["latin"] });
 const words = ["whatsApp", "linkedIn", "twitter", "pinterest"];
+
+const dm_sans = DM_Sans({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "Share socials",
+  description: "Your shareable socials links",
+};
 
 export default function Home() {
   const { setIsOpen } = useTour();
@@ -44,16 +51,16 @@ export default function Home() {
   return (
     <main
       className={`flex min-h-screen xl:mx-[4rem] 2xl:mx-[12rem] 
-      mb-12 flex-col gap-[5rem] md:gap-[10rem] ${inter.className}`}
+      mb-12 flex-col gap-[5rem] md:gap-[10rem] ${dm_sans.className}`}
     >
-      <span className="gradient-text font-bold text-lg flex justify-start pt-4 p-2">
+      <span className="gradient-text font-bold text-lg flex justify-start pt-4 -mr-32 bg-black p-2">
         SocialShare
       </span>
-      <section className="items-center md:px-12 2xl:mx-[14rem] justify-between flex-col flex">
-        <div className="flex justify-center gap-12 items-center flex-col">
+      <section className="items-center lg:px-12 2xl:mx-[14rem] justify-between -pt-4 flex-col flex">
+        <div className="flex justify-center gap-10 items-center flex-col">
           <p
-            className="text-[2rem] md:text-[2.8rem] max-w-[85%] md:max-w-[70%] lg:max-w-[60%]
-           text-center font-bold"
+            className="text-[2.2rem] md:text-[2.9rem] -mt-4 max-w-[85%] md:max-w-[70%] lg:max-w-[60%]
+           text-center font-bold leading-[1.4]"
           >
             Get Social shareable links for{" "}
             <span className="gradient-text capitalize"> {text}</span>
@@ -61,12 +68,12 @@ export default function Home() {
 
           <SsButton
             onClick={() => setIsOpen(true)}
-            className="w-full py-3 bg-black"
+            className="w-full -px-2 py-2 bg-black"
           >
             Take a tour
           </SsButton>
-          <div className="grid md:grid-cols-2 gap-5 px-4 lg:mt-20">
-            <div className="col-span-1 step-one flex flex-col lg:w-[80%] md:max-h-[45vh]">
+          <div className="grid md:grid-cols-2 px-4 md:mt-[7.5rem]">
+            <div className="col-span-1 step-one flex flex-col md:w-[80%] md:max-h-[45vh]">
               <h4 className="uppercase font-bold text-[.9rem] pb-4">
                 Shareable Data
               </h4>

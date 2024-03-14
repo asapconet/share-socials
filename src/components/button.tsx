@@ -51,14 +51,14 @@ const SsButton = ({
         {...rest}
         onClick={handleClick}
         className={classNames(
-          " max-w-[6.5rem] flex items-center justify-center px-2 rounded-lg py-2",
+          " max-w-[6.5rem] flex items-center justify-center rounded-lg py-2",
           className
         )}
       >
         {leftIcon && <span>{(leftIcon && icon[leftIcon]) || leftIcon}</span>}
 
         <span
-          className={classNames("block text-white text-xs w-full", {
+          className={classNames("block text-white text-sm w-full", {
             "ml-1": leftIcon,
             "mr-0": rightIcon,
           })}

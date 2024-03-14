@@ -2,19 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap")
-body {
-  font-family: "DM Sans", sans-serif;
-}
+@layer reset, base, tokens, recipes, utilities;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-/* background: linear-gradient(to right, #ef4444, #a855f7, #1d4ed8); */
 .gradient-text {
   background-image: linear-gradient(90deg, #ef4444, #a855f7, #1d4ed8);
+  gradientto: right;
   background-clip: text;
   color: transparent;
 }
