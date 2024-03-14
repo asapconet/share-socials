@@ -17,7 +17,7 @@ export const LinkCard = ({ className, ...rest }: BProps) => {
   }
 
   const linkIcon: IconProp = {
-    twitter: <FaTwitter className="text-black" />,
+    twitter: <FaTwitter size={17} className="text-black" />,
     linkedIn: <FaLinkedin className="text-blue-600" />,
     whatsApp: <FaWhatsapp className="text-green-400" />,
     pinterest: <FaPinterest className="text-red-600" />,
@@ -27,7 +27,7 @@ export const LinkCard = ({ className, ...rest }: BProps) => {
     <div
       onClick={rest.onClick}
       className={classNames(
-        "flex flex-col justify-between gap-2 rounded-xl p-6 lg:min-h-[16vh] w-full",
+        "flex flex-col justify-between gap-2 rounded-xl p-5 lg:min-h-[16vh] w-full",
         className,
         rest.title === "twitter"
           ? "bg-gray-100"
@@ -67,16 +67,19 @@ export const LinkCard = ({ className, ...rest }: BProps) => {
             ""
           )}
         </span>
-        <p className="font-bold capitalize !text-inherit"> {rest.title}</p>
+        <p className="font-bold capitalize text-[1rem] !text-inherit">
+          {" "}
+          {rest.title}
+        </p>
       </div>
       <SsLink to={rest.link} className="text-[.8rem] pb-2">
         {rest.link}
       </SsLink>
       <SsButton
-        rightIcon={<FiArrowUpRight className="text-white" />}
+        rightIcon={<FiArrowUpRight size={14} className="text-white" />}
         asLink={rest.link}
         className={classNames(
-          "-mb-4 mt-2 px-2 !text-xs" ,
+          "-mb-4 mt-2 px-2 !text-[0.4rem] -!py-4",
           rest.title === "twitter"
             ? "bg-black"
             : rest.title === "linkedIn"

@@ -42,7 +42,7 @@ const SsInput = ({
           <textarea
             id={rest.name || ""}
             className={classNames(
-              "outline-none rounded-md min-h-[3rem] w-full px-4 py-2 placeholder:text-[.83rem] border-[1px] border-gray-300",
+              "outline-none rounded-md min-h-[2.8rem] w-full px-4 py-2 placeholder:text-[.83rem] border-[1px] border-gray-300",
               className
             )}
             {...rest}

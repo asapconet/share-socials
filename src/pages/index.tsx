@@ -59,8 +59,8 @@ export default function Home() {
       <section className="items-center lg:px-12 2xl:mx-[14rem] justify-between -pt-4 flex-col flex">
         <div className="flex justify-center gap-10 items-center flex-col">
           <p
-            className="text-[2.2rem] md:text-[3rem] -mt-4 max-w-[85%] md:max-w-[70%]
-           text-center font-bold leading-[1.4]"
+            className="text-[2.2rem] md:text-[3rem] -mt-3 max-w-[85%] md:max-w-[70%]
+           text-center font-bold leading-[1.2]"
           >
             Get Social shareable links for{" "}
             <span className="gradient-text capitalize"> {text}</span>
@@ -72,9 +72,9 @@ export default function Home() {
           >
             Take a tour
           </SsButton>
-          <div className="grid md:grid-cols-2 px-4 md:mt-[7.5rem] w-full max-w-[900px]">
+          <div className="grid md:grid-cols-2 md:mt-[7.1rem] w-full max-w-[900px]">
             <div className="col-span-1 step-one flex flex-col md:w-[80%] md:max-h-[45vh]">
-              <h4 className="uppercase font-bold text-[.9rem] pb-4">
+              <h4 className="uppercase font-bold text-[.9rem] pb-2">
                 Shareable Data
               </h4>
               <p className="text-sm text-gray-500">
@@ -153,7 +153,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-span-1 step-two flex flex-col">
+            <div className="col-span-1 step-two flex -ml-5 md:w-[105%] flex-col">
               <h4 className="uppercase font-bold  text-[.9rem] pb-4">
                 Social Links
               </h4>
