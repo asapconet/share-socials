@@ -76,7 +76,7 @@ export const LinkCard = ({ className, ...rest }: BProps) => {
         rightIcon={<FiArrowUpRight className="text-white" />}
         asLink={rest.link}
         className={classNames(
-          "-mb-4 mt-2 px-2 text-sm" ,
+          "-mb-4 mt-2 px-2 !text-xs" ,
           rest.title === "twitter"
             ? "bg-black"
             : rest.title === "linkedIn"

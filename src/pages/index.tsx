@@ -53,13 +53,13 @@ export default function Home() {
       className={`flex min-h-screen xl:mx-[4rem] 2xl:mx-[12rem] 
       mb-12 flex-col gap-[5rem] md:gap-[10rem] ${dm_sans.className}`}
     >
-      <span className="gradient-text font-bold text-lg flex justify-start pt-4 -mr-32 bg-black p-2">
+      <nav className="gradient font-bold text-lg flex justify-start pt-4 p-2">
         SocialShare
-      </span>
+      </nav>
       <section className="items-center lg:px-12 2xl:mx-[14rem] justify-between -pt-4 flex-col flex">
         <div className="flex justify-center gap-10 items-center flex-col">
           <p
-            className="text-[2.2rem] md:text-[2.9rem] -mt-4 max-w-[85%] md:max-w-[70%] lg:max-w-[60%]
+            className="text-[2.2rem] md:text-[3rem] -mt-4 max-w-[85%] md:max-w-[70%]
            text-center font-bold leading-[1.4]"
           >
             Get Social shareable links for{" "}
@@ -72,7 +72,7 @@ export default function Home() {
           >
             Take a tour
           </SsButton>
-          <div className="grid md:grid-cols-2 px-4 md:mt-[7.5rem]">
+          <div className="grid md:grid-cols-2 px-4 md:mt-[7.5rem] w-full max-w-[900px]">
             <div className="col-span-1 step-one flex flex-col md:w-[80%] md:max-h-[45vh]">
               <h4 className="uppercase font-bold text-[.9rem] pb-4">
                 Shareable Data
