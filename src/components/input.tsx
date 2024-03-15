@@ -33,12 +33,12 @@ const SsInput = ({
         {label && (
           <label
             htmlFor={rest?.name}
-            className=" text-[.9rem] font-[500] text-gray-700"
+            className=" text-[.85rem] font-[500] text-gray-800"
           >
             {label}
           </label>
         )}
-        <div className="relative w-full py-2">
+        <div className="relative w-full py-1">
           <textarea
             id={rest.name || ""}
             className={classNames(
@@ -62,16 +62,16 @@ const SsInput = ({
       {label && (
         <label
           htmlFor={rest?.name}
-          className="text-[.9rem] font-[500] text-gray-700"
+          className="text-[.85rem] font-[500] text-gray-800"
         >
           {label}
         </label>
       )}
-      <div className="relative w-full my-2">
+      <div className="relative w-full my-1">
         <input
           id={rest.name || ""}
           className={classNames(
-            "outline-none rounded-md h-[2.5rem] w-full px-4 py-2 placeholder:text-[.83rem] border-[1px] border-gray-300",
+            "outline-none rounded-md h-[2.5rem] w-full px-2 py-2 placeholder:text-[.83rem] border-[1px] border-gray-300",
             className
           )}
           {...rest}
