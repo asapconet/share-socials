@@ -51,14 +51,14 @@ const SsButton = ({
         {...rest}
         onClick={handleClick}
         className={classNames(
-          " max-w-[6.2rem] flex items-center justify-center rounded-lg py-[.6rem]",
+          "flex items-center max-w-max justify-center rounded-lg",
           className
         )}
       >
         {leftIcon && <span>{(leftIcon && icon[leftIcon]) || leftIcon}</span>}
 
         <span
-          className={classNames("block text-white text-sm w-full", {
+          className={classNames("block text-white py-2 px-3", {
             "ml-1": leftIcon,
             "mr-0": rightIcon,
           })}
@@ -67,7 +67,7 @@ const SsButton = ({
         </span>
 
         {rightIcon && (
-          <span>{(rightIcon && icon[rightIcon]) || rightIcon}</span>
+          <span className="pr-2">{(rightIcon && icon[rightIcon]) || rightIcon}</span>
         )}
       </button>
       {asLink && <SsLink ref={linkRef} to={asLink} className="!m-0 sr-only" />}
