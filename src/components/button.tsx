@@ -58,7 +58,7 @@ const SsButton = ({
         {leftIcon && <span>{(leftIcon && icon[leftIcon]) || leftIcon}</span>}
 
         <span
-          className={classNames("block text-white py-2 px-3", {
+          className={classNames("block text-white py-[.55rem] px-3", {
             "ml-1": leftIcon,
             "mr-0": rightIcon,
           })}

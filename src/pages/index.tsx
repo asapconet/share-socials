@@ -53,11 +53,11 @@ export default function Home() {
       className={`flex min-h-screen mx-2 xl:mx-[4rem] 2xl:mx-[12rem] 
       mb-12 flex-col gap-[5rem] md:gap-[10rem] ${dm_sans.className}`}
     >
-      <nav className="gradient font-bold text-[1.2rem] flex justify-start 2xl:mx-20 pt-5 p-2">
+      <nav className="gradient font-bold text-[1.2rem] flex justify-start 2xl:mx-[4.5rem] pt-4 p-2">
         SocialShare
       </nav>
       <section className="items-center px-2 lg:px-12 2xl:mx-[14rem] justify-between -pt-4 flex-col flex">
-        <div className="flex justify-center gap-10 items-center flex-col">
+        <div className="flex justify-center gap-[2.4rem] items-center flex-col">
           <p
             className="text-[2.2rem] md:text-[3rem] -mt-3 max-w-[85%] md:max-w-[70%]
            text-center font-bold leading-[1.3]"
@@ -68,7 +68,7 @@ export default function Home() {
 
           <SsButton
             onClick={() => setIsOpen(true)}
-            className="max-w-[6rem] w-full text-sm bg-black"
+            className="max-w-[6rem] w-full text-[.9rem] bg-black"
           >
             Take a tour
           </SsButton>
