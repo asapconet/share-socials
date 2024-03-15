@@ -50,13 +50,13 @@ export default function Home() {
 
   return (
     <main
-      className={`flex min-h-screen xl:mx-[4rem] 2xl:mx-[12rem] 
+      className={`flex min-h-screen mx-2 xl:mx-[4rem] 2xl:mx-[12rem] 
       mb-12 flex-col gap-[5rem] md:gap-[10rem] ${dm_sans.className}`}
     >
       <nav className="gradient font-bold text-[1.2rem] flex justify-start 2xl:mx-20 pt-5 p-2">
         SocialShare
       </nav>
-      <section className="items-center lg:px-12 2xl:mx-[14rem] justify-between -pt-4 flex-col flex">
+      <section className="items-center px-2 lg:px-12 2xl:mx-[14rem] justify-between -pt-4 flex-col flex">
         <div className="flex justify-center gap-10 items-center flex-col">
           <p
             className="text-[2.2rem] md:text-[3rem] -mt-3 max-w-[85%] md:max-w-[70%]
@@ -153,7 +153,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-span-1 step-two flex -ml-5 md:w-[105%] flex-col">
+            <div className="col-span-1 step-two flex lg:-ml-5 md:w-[105%] flex-col">
               <h4 className="uppercase font-bold  text-[.9rem] pb-4">
                 Social Links
               </h4>
